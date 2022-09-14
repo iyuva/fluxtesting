@@ -31,18 +31,18 @@ spec:
     kind: GitRepository
     name: flux-system
     
- ---
-apiVersion: source.toolkit.fluxcd.io/v1beta2
-kind: GitRepository
-metadata:
-  name: gitops-infra
-  namespace: flux-system
-spec:
-  gitImplementation: go-git
-  interval: 1m0s
-  ref:
-    tag: 1.0.0 # if there u can add or ignore
-   SecretRef:
-     name: gitops-infra
-   timeout: 1m0s
-   url: ssh://git@github.com/path of ssh 
+# ---
+# apiVersion: source.toolkit.fluxcd.io/v1beta2
+# kind: GitRepository
+# metadata:
+#   name: gitops-infra
+#   namespace: flux-system
+# spec:
+#   gitImplementation: go-git
+#   interval: 1m0s
+#   ref:
+#     tag: 1.0.0 # if there u can add or ignore
+#    SecretRef:
+#      name: gitops-infra
+#    timeout: 1m0s
+#    url: ssh://git@github.com/path of ssh 
