@@ -1,0 +1,1 @@
+helm template manifests/charts/istio-operator/ --set hub=docker.io/istio --set tag=1.6.1 --set operatorNamespace=istio-operator --set istioNamespace=istio-system > /tmp/helm_operator_install.yaml 
